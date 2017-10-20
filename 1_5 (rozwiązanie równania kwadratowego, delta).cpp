@@ -7,6 +7,7 @@ int main()
 {
     double
     a, b, c, delta, x, x1, x2;
+    cout<< "Uprzejmie prosze o wprowadzenie nastepujaco po sobie liczb a, b oraz c."<<endl;
     cin>>a>>b>>c;
     if (a==0) {cout<< "Bardzo mi przykro, ale to nie jest rownanie kwadratowe :("<<endl;
     } else {
