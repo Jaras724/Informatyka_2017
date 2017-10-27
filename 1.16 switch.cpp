@@ -1,0 +1,40 @@
+#include <iostream>
+#include <math.h>
+#include <windows.h>
+
+using namespace std;
+
+int main()
+{
+
+{
+    int x;
+    double y;
+    cout<<"Podaj x"<<endl;
+    cin>>x;
+
+    if(x<1)
+        cout<<(2*x)<<endl;
+else
+{
+    switch(x)
+    {
+    case 1:
+        y=-10;
+        break;
+    case 3:
+        y=pow((x-1),4);
+        break;
+    case 6:
+        y=sqrt(x-4);
+        break;
+
+    default:
+        y=0;
+    }
+}
+
+cout<<"Wartosc funkcji wynosi: "<<y<<endl;
+}
+return 0; }
+
