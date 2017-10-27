@@ -16,7 +16,7 @@ if (x<7) {
     y=pow(x,3)+1;
     } else
 {
-    switcout<<"Funkcja f(x) wynosi "<<x<<endl;ch(x)
+    switch(x)
     {
     case 7:
         y=cos(x-1);
@@ -26,10 +26,10 @@ if (x<7) {
         break;
         defeult:
             y=-8*x;
-            cout<<"Funkcja f(x) wynosi "<<x<<endl;
+
     }
 }
-
+ cout<<"Funkcja f(x) wynosi "<<x<<endl;
 
 system("pause");
 return 0;
