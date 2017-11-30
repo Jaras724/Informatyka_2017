@@ -81,7 +81,7 @@ bin="";
     bin="";
 }
 
-    cout<<"Liczba ta w przeliczeniu na system binarny wynosi: "<<endl<<setfill('0')<<setw(8)<<bin1<<"."<<setfill('0')<<setw(8)<<bin2<<"."<<setfill('0')<<setw(8)<<bin3<<"."<<setfill('0')<<setw(8)<<bin4<<endl<<endl;
+    cout<<"Podany adres IP w przeliczeniu na system binarny wyglada nastepujaco: "<<endl<<setfill('0')<<setw(8)<<bin1<<"."<<setfill('0')<<setw(8)<<bin2<<"."<<setfill('0')<<setw(8)<<bin3<<"."<<setfill('0')<<setw(8)<<bin4<<endl<<endl;
     }
     system("pause");
     }
