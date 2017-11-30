@@ -22,7 +22,7 @@ cout << "Podaj adres IP:" << endl;
     cin>>ip>>ip2>>ip3>>ip4;
     cout<<"Podany przez Ciebie adres IP to: "<<ip<<"."<<ip2<<"."<<ip3<<"."<<ip4<<endl<<endl;
 
-bin="0";
+bin="";
     while(ip!=0)
     {
     if (ip%2==0){
@@ -34,7 +34,7 @@ bin="0";
         ip=ip/2;
     bin1=bin;
     };
-    bin="0";
+    bin="";
 {
  while(ip2!=0)
     {
@@ -47,7 +47,7 @@ bin="0";
         ip2=ip2/2;
     bin2=bin;
     };
-    bin="0";
+    bin="";
     {
 
 
@@ -62,7 +62,7 @@ bin="0";
         ip3=ip3/2;
     bin3=bin;
     }};
-    bin="0";{
+    bin="";{
      while(ip4!=0)
     {
     if (ip4%2==0){
@@ -74,20 +74,8 @@ bin="0";
         ip4=ip4/2;
     bin4=bin;
     }};
-    bin="0";
+    bin="";
 }
+
     cout<<"Liczba ta w przeliczeniu na system binarny wynosi: "<<endl<<bin1<<"."<<bin2<<"."<<bin3<<"."<<bin4;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
