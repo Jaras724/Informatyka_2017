@@ -1,8 +1,12 @@
 #include <iostream>
+#include <math.h>
+#include <iomanip>
+#include <windows.h>
 
 using namespace std;
 
 int main()
+{
 {
     int ip, ip2, ip3, ip4; string bin="", bin1, bin2, bin3, bin4;
 
@@ -70,12 +74,14 @@ bin="";
     }
     else
     {
-        bin="1"+bin;}
+        bin="1"+bin;};
         ip4=ip4/2;
     bin4=bin;
     }};
     bin="";
 }
 
-    cout<<"Liczba ta w przeliczeniu na system binarny wynosi: "<<endl<<bin1<<"."<<bin2<<"."<<bin3<<"."<<bin4;
+    cout<<"Liczba ta w przeliczeniu na system binarny wynosi: "<<endl<<setfill('0')<<setw(8)<<bin1<<"."<<setfill('0')<<setw(8)<<bin2<<"."<<setfill('0')<<setw(8)<<bin3<<"."<<setfill('0')<<setw(8)<<bin4<<endl<<endl;
+    }
+    system("pause");
     }
