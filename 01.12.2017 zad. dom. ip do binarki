@@ -12,15 +12,16 @@ int main()
 
     cout<<"Instrukcja:"<<endl;
     cout<<"W celu poprawnego dzialania programu, wprowadz kolejno cztery czlony adresu IP - kazdy czlon musisz oddzielic klawiszem ENTER."<<endl;
-    cout<<"Przyklad:"<<endl;
+    cout<<"Poprawne wprowadzenie przykladowego adresu IP 192.168.1.1 wyglada nastepujaco:"<<endl;
         cout<<"192"<<endl;
         cout<<"168"<<endl;
             cout<<"1"<<endl;
             cout<<"1"<<endl;
-            cout<<"!!NIE WPROWADZAJ KROPEK!!"<<endl;
+            cout<<"Nie nalezy stosowac kropek!"<<endl;
             cout<<"Nastepnie wprowadzony przez Ciebie adres IP zostanie przeliczony na system binarny"<<endl;
             cout<<"Zaczynajmy!"<<endl;
             cout<<endl;
+
 cout << "Podaj adres IP:" << endl;
 
     cin>>ip>>ip2>>ip3>>ip4;
