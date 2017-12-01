@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x,y,i;
+    cout<<"Podaj przedzial poczatkowy"<<endl;
+    cin>>x;
+    cout<<"Podaj przedzial koncowy"<<endl;
+    cin>>y;
+    if(y%2==0){
+        y--;
+    }
+
+for(i=x; i<=y; i++){
+    if (i%2!=0) {
+
+            if(i!=y)
+
+              cout<<i<<",";
+
+            else{
+                cout<<i<<".";
+            }
+    }
+}
+}
+
+
