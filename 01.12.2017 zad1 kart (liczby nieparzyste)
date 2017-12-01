@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int i=-6;
+    cout<<"(";
+    for(i;i<=21;i+3) {
+i=i+3;
+
+        if (i!=3 && i!=18 && i!=21 && i%2!=0) {
+            cout<<i<<", ";
+        }
+
+
+if (i==21) {cout<<"21)";}
+
+}
+ return 0;
+
+}
