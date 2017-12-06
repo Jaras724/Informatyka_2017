@@ -27,4 +27,40 @@ for(i=x; i<=y; i++){
 }
 }
 
+LUB
+
+#include <iostream>
+#include <windows.h>
+
+using namespace std;
+
+int main()
+
+{
+    int x,y;
+    cout<<"Podaj wartosc poczatkowa"<<endl;
+    cin>>x;
+    cout<<"Podaj wartosc koncowa"<<endl;
+    cin>>y;
+    if(y<x) cout<<"blad";
+    if (y%2==0) {
+            y=y-1;
+    }
+    if (x%2==0) {
+        x=x+1;
+    }
+
+    for(x;x<=y;x+2) {
+            if (x!=y) {
+        cout<<x<<", ";
+        x=x+2;
+            }
+            if (x==y) {
+                cout<<y<<"."<<endl;
+    break;
+    }
+    }
+    system("pause");
+}
+
 
