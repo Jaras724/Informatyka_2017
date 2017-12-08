@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x=1, suma=0;
+
+    for(x;x<=50;x++) {
+
+    suma=suma+x;
+    }
+
+
+cout<<suma;
+}
