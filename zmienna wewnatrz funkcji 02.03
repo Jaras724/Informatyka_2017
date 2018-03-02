@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+void f(int*n) {
+    *n = *n * 10;
+cout<<"Wartosc zmiennej n wewnatrz funkcji: "<<*n<<endl;
+}
+void f1(int x){
+x=x*10;
+cout<<"wartosc zmiennej x wewnatrz funkcji: "<<x<<endl;}
+
+int main()
+{
+    int a=5;
+    int x=5;
+    f(&a);
+    cout<<"Wartnosc zmiennej a na zewnatrz funkcji wynosi: "<<a<<endl;
+    f1(x);
+    cout<<"Wartosc zmiennej x na zewnatrz funkcji wynosi: " <<x<<endl;
+    return 0;
+}
