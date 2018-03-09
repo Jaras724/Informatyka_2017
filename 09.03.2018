@@ -1,0 +1,46 @@
+#include <iostream>
+#include <cstdlib>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int a;
+
+void oblicz1 (void) {
+int a; //jest int-> zmienna lokalna
+a=10;
+cout<<"w funkcji o nazwie oblicz1: "<<a<<endl;
+}
+
+void oblicz2(void){
+    //nie ma int-> zmienna globalna
+    a=20;
+    cout<<"W funkcji oblicz2: "<<a<<endl;
+}
+
+void oblicz3(int &z){ //jak jest referencja, to a przypisze wartosc z
+z=-5;
+cout<<"W funkcji oblicz3: "<<z<<endl;
+}
+
+void oblicz4(int z){
+z=-7;
+cout<<"W funkcji oblicz 4: "<<z<<endl;
+}
+
+int main()
+{
+    a=0;
+    cout<<"zmienna a wynosi: "<<a<<endl;
+    oblicz1();
+    cout<<"zmienna a po wywolaniu funkcji wynosi "<<a<<endl;
+    oblicz2();
+    cout<<"zmienna a: "<<a<<endl;
+    oblicz3(a);
+    cout<<"zmienna a (oblicz3) wynosi: "<<a<<endl;
+    oblicz4(a);
+    cout<<"zmienna a (oblicz2) wynosi: "<<a<<endl;
+
+
+}
