@@ -1,0 +1,12 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int t[10]={4,5,7,-1,4,0,543,5,1111,7};
+    int n;
+    cout<<"Podaj, ktora liczbe z tablicy chcesz zobaczyc: "<<endl;
+    cin>>n;
+    cout<<"Liczba ta wynosi: "<<t[n-1];
+}
