@@ -1,0 +1,63 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+void wstaw (int T[], int ile) {
+
+    for(int i=0; i<ile; i++) {
+        cout<<"Podaj "<<i+1<<"element tablicy";
+        cin>>T[i];
+    }
+}
+void wyswietl (int T[], int ile) {
+for (int i=0; i<ile; i++) {
+    cout<<T[i]<<" ";
+}
+}
+
+void wczytaj(int T[], int n) {
+    for (int i=0; i<n; i++) {
+        cout<<"T["<<i<<"] = ";
+        cin>>T[i];
+    }
+}
+
+void wypisz(int T[], int n){
+    cout<<endl<<"elementy w tablicy: "<<endl;
+    for(int i=0; i<n; i++)
+        cout<<setw(7)<<T[i];
+        cout<<endl;
+}
+
+void odwrotnie (int T[], int n){
+cout<<"Podaj ilosc elementow do wyswietlenia"<<endl;
+cin>>n;
+for (int i=n-1; i>=0; i--) {
+    cout<<T[i];
+    cout<<endl;
+}
+}
+
+int sumaElementow(int T[], int n){
+    int suma=0;
+    for (int i=0;i<n;i++){
+            suma+=T[i];
+        }
+    return suma;
+}
+
+
+
+int main()
+{
+    int T[5]={1,2,33,2,5};
+    int tablica[10];
+    wczytaj(tablica,10);
+    cout<<endl;
+    wyswietl(tablica,10);
+    wypisz(tablica,10);
+    odwrotnie(tablica,10);
+    cout<<"suma elementow wynosi: "<<sumaElementow(tablica,10);
+}
+
